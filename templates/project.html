@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %} Project {% endblock title %}
+{% block style %} <link rel="stylesheet" href="/static/project.css"> {% endblock style %}
+
+{% block content %}
+
+<h2 class="list">Project List</h2>
+
+<hr class="ruler">
+
+    {% for i in p_list %}
+        <div class="p_list">
+            <p class="name"> Project Name : <span class="n">  {{i.name}} </span></p>
+            <p class="stack">Stack : <span class="s">{{i.stack}} </span></p>
+            <div class="desc"><p> <span class="d">Project Description :</span>{{i.desc}}</p></div>
+            <a href="{{i.url}}" class="url">click here to view the project</a>
+        </div>
+    {% endfor %}
+
+{% endblock content %}

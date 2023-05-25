@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block title %}About{% endblock title %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block style %}
+        <link rel="stylesheet" href="/static/about.css">
+    {% endblock style %}
+    
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+        <h1 class="abt">Welcome to About Page</h1>
+        <hr class="ruler">
+        <h2 class="who">WHO AM I ?</h2>
+        <p class="bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque repellat numquam quod ab commodi corrupti blanditiis praesentium aliquid! Recusandae ea ipsa ducimus, debitis omnis, nisi saepe voluptatibus velit sequi ipsam eius tempore! Repudiandae aliquam commodi, illum voluptas natus non ratione quidem deserunt aspernatur perspiciatis, quaerat eius aperiam rerum adipisci laboriosam incidunt nihil. Corporis quasi necessitatibus ex tenetur illum in vel eum, optio, dicta non sequi esse voluptate pariatur maxime deserunt id fuga cupiditate, eaque similique consectetur atque consequuntur repellat. Distinctio dolor tempora qui dolorem cumque rerum itaque unde dicta atque? Neque sit sint debitis rem nesciunt deserunt quidem, dignissimos doloribus.</p>
+
+        <div class="edtn">
+            <h2 class="edn">EDUCATION</h2>
+            <p class="school">Completed S.S.C from ST.WILLIBRORDS INNOVATIVE SCHOOL</p>
+            <p class="jrc">Completed H.S.C from TP BHATIA COLLEGE OF SCIENCE</p>
+            <p class="eng">Currently Pursuing 3rd year of Computer Engineering from ST.FRANCIS INSTITUTE OF TECHNOLOGY</p>
+        </div>
+        
+        <div class="skills">
+            <h2 class="s">SKILLS</h2>
+            <div class="skill">
+                <ul>
+                    <li>
+                        Programming Languages
+                        <ol type="1">
+                            <li>JAVA</li>
+                            <li>C++</li>
+                            <li>PYTHON</li>
+                            <li>Javascript</li>
+                        </ol>
+                    </li>
+                    <li>
+                        Framework
+                        <ol type="1">
+                            <li>Django</li>
+                            <li>React</li>
+                            <li>Flutter</li>
+                        </ol>
+                    </li>
+                    <li>
+                        Database
+                        <ol type="1">
+                            <li>PHP</li>
+                            <li>MYSQL</li>
+                            <li>MONGODB</li>
+                        </ol>
+                    </li>
+                    <li>
+                        Other
+                        <ol type="1">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ol>
+                    </li>
+                    
+                  </ul>  
+            </div>
+        </div>
+
+        <div class="exp">
+            <h2 class="expr">EXPERIENCE</h2>
+            <div class="e">
+                <p> X </p>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h2 class="cnt">HOW TO CONTACT ME ?</h2>
+            <div class="c">
+                <p>You connect with me through the social media links provided on the <a href="/home" class="home">home page</a> or on My number +917769869134</p>
+            </div>
+        </div>
+    {% endblock content %}
+</body>
+</html>

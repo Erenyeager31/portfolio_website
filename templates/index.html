@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block title %}Homepage{% endblock title %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block style %}
+        <link rel="stylesheet" href="/static/index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+    {% endblock style %}
+    
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+        
+    <div class="container_1">
+        <div class="info">
+            <div class="line1">
+                <p class="greeting">HI ! I am </p>
+                <h3 class="name">DISHANT SHAH</h3>
+            </div>
+            <h5 class="role">Please check out my Portfolio</h5>
+        </div>
+        <div class="image">
+            <img src="/static/img.jpg" alt="" class="profile">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="row">
+            <a href="https://instagram.com/dishant_shah31?igshid=ZGUzMzM3NWJiOQ== " class="ig"><i class="fa fa-instagram"></i></a> /
+            <a href="https://www.linkedin.com/in/dishant-shah-7b8058210 " class="link"><i class="fa fa-linkedin"></i></a> /
+            <a href="https://twitter.com/Dishantshah31?t=n08_x4mE6Ai-v7J4dZP0qA&s=08" class="tw"><i class="fa fa-twitter"></i></a> /
+            <a href="https://github.com/Erenyeager31" class="git"><i class="fa fa-github"></i></a>
+        </div>
+        <div class="row2">
+            <p class="last">copyrigth &copy; 2023 DISHANT SHAH</p>
+        </div>
+    </footer>
+    
+    {% endblock content %}
+</body>
+</html>

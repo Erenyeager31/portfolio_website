@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap');
+
+.abt{
+    padding: 0px 10px;
+    color: #f2f2f2;
+    font-family: 'Raleway', sans-serif;
+}
+
+.ruler{
+    margin: 5px 10px;
+    animation: ruler 4s linear infinite;
+}
+
+@keyframes ruler {  /*animation for hr */
+    0%{
+        border-color: #f2f2f2;
+    }
+    25%{
+        border-color: #ffbb00;
+    }
+    75%{
+        border-color: #f2f2f2;
+    }
+    100%{
+        border-color: #ffbb00;
+    }
+}
+
+.who,.expr,.edn,.cnt,.s{
+    margin: 5px 5px;
+    color: #ffbb00;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+.bio,.school,.jrc,.eng,.e,.c{
+    margin: 10px 10px;
+    color: #f2f2f2;
+    font-family: 'Raleway', sans-serif;
+}
+
+.skill{
+    margin:10px 30px;
+    color: #f2f2f2;
+    font-family: 'Raleway', sans-serif;
+}
+
+.home{
+    text-decoration: none;
+    color: #ffbb00;
+    font-weight: 700;
+}
+
+.skill ol{
+    margin-left: 20px;
+}
+
+@media screen and (max-width:567px) {
+    .abt{
+        font-size: 20px;
+        text-align: center;
+    }   
+}
